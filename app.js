@@ -178,9 +178,10 @@ let firstLast = []
 // Enter your solution code here:
 
 firstLast = people.map((person) => {
-    person.split(",")
+   const lastFirst = person.split(",")
+   return `${lastFirst[1]} ${lastFirst[0]}`
+ 
 })
-
 // Check your return value:
 console.log('Exercise 5 My Result: ', firstLast)
 console.log('Exercise 5 Correct Result: ',
